@@ -3,6 +3,7 @@ kind: Service
 metadata:
   labels:
     app: {{ .Values.app_name }}
+    new-label: my-label-data
   name: my-service
 spec:
   type: ExternalName
