@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: {{ .Values.app_name }}
+  name: my-service
+spec:
+  type: ExternalName
+  externalName: www.google.com
+  selector:
+    app: {{ .Values.app_name }}

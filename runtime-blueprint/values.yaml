@@ -1,0 +1,3 @@
+## Default values for runtime blueprint
+
+app_name: "default-name"
